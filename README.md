@@ -2,7 +2,7 @@
 
 
 ## Schermata dell'applicazione
-![Prosa App](Screen.png)
+![Prosa App](src/assets/home.png)
 
 
 ## Project setup
