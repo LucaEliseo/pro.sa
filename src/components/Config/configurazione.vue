@@ -1,6 +1,6 @@
 
 <template>
-   <v-row>
+   <v-row style="margin: 0 auto;">
        <v-col style="text-align: center "  cols="12" md="12">
       <h1 class="title">CONFIGURAZIONI</h1>
       <hr>

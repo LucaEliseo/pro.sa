@@ -35,7 +35,7 @@
               </v-btn>
             </template>
 
-            <v-card class="menu-card">
+            <v-card max-width="300px" class="menu-card">
               <v-list>
                 <v-list-item
                   class="itemAvatar"
