@@ -108,8 +108,7 @@ img {
 }
 
 .social-icons {
-  margin-left: auto; /* Sposta le icone a destra */
-}
+  margin-left: auto; }
 
 .menu-card {
   max-width:400px;
