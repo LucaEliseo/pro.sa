@@ -6,7 +6,6 @@
       <hr>
       <v-row>
         <v-col
-        style="padding: 3em;"
           v-for="(progetto, index) in progetto"
           :key="index"
           cols="12"
@@ -14,7 +13,7 @@
           md="6"
           xl="4"
         >
-          <v-card  class="mx-auto card cardTitle" max-width="180" >
+          <v-card  class="mx-auto card cardTitle" max-width="180">
             <v-img class="cardTitle" :src="progetto.img" height="180px" cover></v-img>
             <v-card-title class="cardTitle">{{ progetto.titolo }}</v-card-title>
             <v-card-subtitle  class="cardTitle">{{ progetto.tema }}</v-card-subtitle>
@@ -34,7 +33,6 @@
       <hr>
       <v-row>
         <v-col
-        style="padding: 3em;"
           v-for="(campagna, index) in campagna"
           :key="index"
           cols="12"
@@ -54,7 +52,7 @@
 
   <div class="devicesContainer" style="text-align: center;">
     <h1 class="title">DEVICES</h1>
-    <hr>
+    <hr style="width: 20% !important;">
 
     <v-container fluid fill-width>
     <v-row class="d-flex justify-center align-center">
@@ -168,10 +166,10 @@ export default {
 };
 </script>
 <style scoped>
-
 .projectContainer,
-.campagnaContainer{
-  margin-top: 4em ;
+.campagnaContainer {
+ margin-top: -20px;
+  padding: 6em;
 }
 
 .title {
@@ -183,8 +181,8 @@ hr {
   border: 1px solid #e10b17;
   width: 30%;
   margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 3em;
+  margin-top: 1em;
+  margin-bottom: 4em;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -194,6 +192,7 @@ hr {
   padding: 1em;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .card:hover {
@@ -210,7 +209,8 @@ hr {
 }
 
 .devicesContainer {
-  margin-top: 2em;
+  padding: 2em;
+  margin-top: -50px;
 }
 
 

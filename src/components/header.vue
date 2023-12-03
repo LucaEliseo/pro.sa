@@ -50,7 +50,7 @@
               </v-list>
 
               <v-list>
-                <v-list-item-group v-if="!$route.meta.hideMenu">
+                <v-list-item-group>
                   <v-list-item v-for="(item, index) in menuItems" :key="index" @click="navigateTo(item.path)">
                     <v-icon>{{ item.icon }}</v-icon>
                     <span>{{ item.text }}</span>
