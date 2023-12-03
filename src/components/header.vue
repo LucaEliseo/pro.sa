@@ -4,7 +4,9 @@
   <v-app style="min-height: 0; max-height: 90px; overflow-y: hidden;">
     <v-app-bar class="secondHeader">
       <v-row>
+        <router-link to="/home">
         <img src="../assets/logo.png" alt="Logo" />
+        </router-link>
       </v-row>
 
       <v-btn icon>
