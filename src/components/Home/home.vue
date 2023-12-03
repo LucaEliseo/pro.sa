@@ -6,6 +6,7 @@
       <hr>
       <v-row>
         <v-col
+        style="padding: 3em;"
           v-for="(progetto, index) in progetto"
           :key="index"
           cols="12"
@@ -13,7 +14,7 @@
           md="6"
           xl="4"
         >
-          <v-card  class="mx-auto card cardTitle" max-width="180">
+          <v-card  class="mx-auto card cardTitle" max-width="180" >
             <v-img class="cardTitle" :src="progetto.img" height="180px" cover></v-img>
             <v-card-title class="cardTitle">{{ progetto.titolo }}</v-card-title>
             <v-card-subtitle  class="cardTitle">{{ progetto.tema }}</v-card-subtitle>
@@ -33,6 +34,7 @@
       <hr>
       <v-row>
         <v-col
+        style="padding: 3em;"
           v-for="(campagna, index) in campagna"
           :key="index"
           cols="12"
@@ -166,10 +168,10 @@ export default {
 };
 </script>
 <style scoped>
+
 .projectContainer,
-.campagnaContainer {
-  
-  padding: 6em;
+.campagnaContainer{
+  margin-top: 4em ;
 }
 
 .title {
@@ -181,8 +183,8 @@ hr {
   border: 1px solid #e10b17;
   width: 30%;
   margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 3em;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -208,7 +210,7 @@ hr {
 }
 
 .devicesContainer {
-  padding: 2em;
+  margin-top: 2em;
 }
 
 
