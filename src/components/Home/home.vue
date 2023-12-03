@@ -168,7 +168,7 @@ export default {
 <style scoped>
 .projectContainer,
 .campagnaContainer {
-  margin-top: 1em;
+  
   padding: 6em;
 }
 
