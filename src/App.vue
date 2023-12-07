@@ -1,27 +1,27 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <RouterView></RouterView>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/header.vue'
-import Footer from './components/footer.vue';
+import Header from "./components/header.vue";
+import Footer from "./components/footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
-  font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div style="max-height: 300px;" class="firstHeader"></div>
+  <div style="max-height: 300px" class="firstHeader"></div>
 
   <v-app style="min-height: 0; max-height: 90px; overflow-y: hidden">
     <v-app-bar class="secondHeader">
@@ -28,9 +28,19 @@
           </v-btn>
         </v-col>
         <v-col cols="auto">
-          <v-menu max-width="500px" v-model="menu" :close-on-content-click="false" offset-y>
-            <template  v-slot:activator="{ props }">
-              <v-btn style="margin-right: 30px;" color="white" v-bind="props" icon>
+          <v-menu
+            max-width="500px"
+            v-model="menu"
+            :close-on-content-click="false"
+            offset-y
+          >
+            <template v-slot:activator="{ props }">
+              <v-btn
+                style="margin-right: 30px"
+                color="white"
+                v-bind="props"
+                icon
+              >
                 <v-icon>mdi-menu</v-icon>
               </v-btn>
             </template>
@@ -51,7 +61,11 @@
 
               <v-list>
                 <v-list-item-group>
-                  <v-list-item v-for="(item, index) in menuItems" :key="index" @click="navigateTo(item.path)">
+                  <v-list-item
+                    v-for="(item, index) in menuItems"
+                    :key="index"
+                    @click="navigateTo(item.path)"
+                  >
                     <v-icon>{{ item.icon }}</v-icon>
                     <span>{{ item.text }}</span>
                   </v-list-item>
@@ -108,10 +122,11 @@ img {
 }
 
 .social-icons {
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 .menu-card {
-  max-width:400px;
+  max-width: 400px;
   padding: 1em;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

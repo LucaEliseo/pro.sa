@@ -1,37 +1,34 @@
 <template>
+  <v-col style="text-align: center" class="campagnaContainer" cols="12" md="12">
+    <h1 class="title">CAMPAGNA</h1>
+    <hr />
+    <v-row>
       <v-col
-      style="text-align: center"
-      class="campagnaContainer"
-      cols="12"
-      md="12"
-    >
-      <h1 class="title">CAMPAGNA</h1>
-      <hr>
-      <v-row>
-        <v-col
-          v-for="(campagna, index) in campagna"
-          :key="index"
-          cols="12"
-          sm="6"
-          md="6"
-          xl="4"
-        >
-          <v-card class="mx-auto card" max-width="300">
-            <v-img :src="campagna.img" height="300px" cover></v-img>
-            <v-card-title class="cardTitle">{{ campagna.titolo }}</v-card-title>
-            <v-card-subtitle class="cardTitle">{{ campagna.tema }}</v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-col>
-    <div class="text-center">
+        v-for="(campagna, index) in campagna"
+        :key="index"
+        cols="12"
+        sm="6"
+        md="6"
+        xl="4"
+      >
+        <v-card class="mx-auto card" max-width="300">
+          <v-img :src="campagna.img" height="300px" cover></v-img>
+          <v-card-title class="cardTitle">{{ campagna.titolo }}</v-card-title>
+          <v-card-subtitle class="cardTitle">{{
+            campagna.tema
+          }}</v-card-subtitle>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-col>
+  <div class="text-center">
     <v-pagination
       v-model="page"
       :length="4"
       rounded="circle"
       disab
     ></v-pagination>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -41,47 +38,44 @@ export default {
   data() {
     return {
       campagna: [
-  {
-    img: require("../../assets/logo.png"),
-    titolo: "Vaccinazione influenzale",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Prevenzione delle Malattie",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Cura delle Malattie Neurologiche",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Screening del Cancro al Seno",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Programma di Salute Mentale",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Gestione del Diabete",
-    tema: "Settore Ospedaliero"
-  },
-],
-
-     
+        {
+          img: require("../../assets/logo.png"),
+          titolo: "Vaccinazione influenzale",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Prevenzione delle Malattie",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Cura delle Malattie Neurologiche",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Screening del Cancro al Seno",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Programma di Salute Mentale",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Gestione del Diabete",
+          tema: "Settore Ospedaliero",
+        },
+      ],
     };
   },
 };
 </script>
 <style scoped>
-
 .campagnaContainer {
- margin-top: -30px;
+  margin-top: -30px;
   padding: 6em;
 }
 

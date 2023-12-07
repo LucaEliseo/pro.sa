@@ -1,11 +1,9 @@
-
-
 <template>
-  <v-row style="margin: 0 auto;">
+  <v-row style="margin: 0 auto">
     <!-- PROGETTO -->
     <v-col style="text-align: center" class="projectContainer" cols="12" md="6">
       <h1 class="title">PROGETTO</h1>
-      <hr>
+      <hr />
       <v-row>
         <v-col
           v-for="(progetto, index) in progetto"
@@ -15,10 +13,17 @@
           md="6"
           xl="4"
         >
-          <v-card  class="mx-auto card cardTitle" max-width="180">
-            <v-img class="cardTitle" :src="progetto.img" height="180px" cover></v-img>
+          <v-card class="mx-auto card cardTitle" max-width="180">
+            <v-img
+              class="cardTitle"
+              :src="progetto.img"
+              height="180px"
+              cover
+            ></v-img>
             <v-card-title class="cardTitle">{{ progetto.titolo }}</v-card-title>
-            <v-card-subtitle  class="cardTitle">{{ progetto.tema }}</v-card-subtitle>
+            <v-card-subtitle class="cardTitle">{{
+              progetto.tema
+            }}</v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
@@ -32,7 +37,7 @@
       md="6"
     >
       <h1 class="title">CAMPAGNA</h1>
-      <hr>
+      <hr />
       <v-row>
         <v-col
           v-for="(campagna, index) in campagna"
@@ -45,14 +50,14 @@
           <v-card class="mx-auto card" max-width="190">
             <v-img :src="campagna.img" height="180px" cover></v-img>
             <v-card-title class="cardTitle">{{ campagna.titolo }}</v-card-title>
-            <v-card-subtitle class="cardTitle">{{ campagna.tema }}</v-card-subtitle>
+            <v-card-subtitle class="cardTitle">{{
+              campagna.tema
+            }}</v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
     </v-col>
   </v-row>
-
-
 </template>
 <script>
 export default {
@@ -93,39 +98,37 @@ export default {
         },
       ],
       campagna: [
-  {
-    img: require("../../assets/logo.png"),
-    titolo: "Vaccinazioneinfluenzale",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Prevenzione delle Malattie",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Cura delle Malattie Neurologiche",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Screening del Cancro al Seno",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Programma di Salute Mentale",
-    tema: "Settore Ospedaliero"
-  },
-  {
-    img: "",
-    titolo: "Gestione del Diabete",
-    tema: "Settore Ospedaliero"
-  },
-],
-
-   
+        {
+          img: require("../../assets/logo.png"),
+          titolo: "Vaccinazioneinfluenzale",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Prevenzione delle Malattie",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Cura delle Malattie Neurologiche",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Screening del Cancro al Seno",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Programma di Salute Mentale",
+          tema: "Settore Ospedaliero",
+        },
+        {
+          img: "",
+          titolo: "Gestione del Diabete",
+          tema: "Settore Ospedaliero",
+        },
+      ],
     };
   },
 };
@@ -133,7 +136,7 @@ export default {
 <style scoped>
 .projectContainer,
 .campagnaContainer {
- margin-top: -20px;
+  margin-top: -20px;
   padding: 6em;
 }
 
@@ -177,7 +180,4 @@ hr {
   padding: 2em;
   margin-top: -50px;
 }
-
-
-
 </style>
