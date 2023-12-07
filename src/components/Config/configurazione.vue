@@ -46,25 +46,23 @@
   };
   </script>
   
-  <style>
-.title {
-  color: #003183;
-  font-size: 24px;
-  margin-top: 2em ;
-  margin-bottom: 2em;
-}
+  <style scoped>
+  .title {
+      color: #003183;
+      font-size: 24px;
+      margin-top: 2em;
+    }
+    
+    hr {
+      border: 1px solid #e10b17;
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 1em;
+      margin-bottom: 4em;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    }
 
-hr {
-  border: 1px solid #e10b17;
-  width: 20%;
-  margin: 0 auto;
-  margin-top: em;
-  margin-bottom: 3em;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
-}
-
-.icon{
-  margin-bottom: 2em;
-}
+    .icon{
+      margin-bottom: 2em;
+    }
   </style>
-  

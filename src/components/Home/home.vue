@@ -1,3 +1,5 @@
+
+
 <template>
   <v-row style="margin: 0 auto;">
     <!-- PROGETTO -->
@@ -50,40 +52,7 @@
     </v-col>
   </v-row>
 
-  <div class="devicesContainer" style="text-align: center;">
-    <h1 class="title">DEVICES</h1>
-    <hr style="width: 20% !important;">
 
-    <v-container fluid fill-width>
-    <v-row class="d-flex justify-center align-center">
-      <v-col
-        style="padding: 2em;"
-        v-for="(device, index) in device"
-        :key="index"
-        cols="12"
-        s="12"
-        sm="4"
-        md="3"
-        xl="2"
-      >
-        <v-card
-          max-width="250px"
-          class="card"
-          style="margin: 20px; background-color: #d0e2ea;"
-        >
-          <v-img
-            style="margin: 0 auto;"
-            max-height="60px"
-            max-width="220px"
-            :src="device.img"
-          ></v-img>
-          <v-card-title>{{ device.titolo }}</v-card-title>
-          <v-card-text>{{ device.valore }}</v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
-  </div>
 </template>
 <script>
 export default {
@@ -156,11 +125,7 @@ export default {
   },
 ],
 
-      device: [
-        {img: require("../../assets/steps.png"), titolo: "STEPS" , valore: "451 PASSI" },
-        {img: require("../../assets/distance.png"), titolo: "DISTANCES" , valore: "0,32 KM" },
-        {img: require("../../assets/elevator.png"), titolo: "ELEVATOR" , valore: "2 PIANI SALITI" }
-      ]
+   
     };
   },
 };
@@ -214,7 +179,5 @@ hr {
 }
 
 
-.cardTitle:hover {
-  white-space: normal;
-}
+
 </style>

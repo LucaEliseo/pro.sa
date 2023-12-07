@@ -1,5 +1,5 @@
 <template>
-  <div class="firstHeader"></div>
+  <div style="max-height: 300px;" class="firstHeader"></div>
 
   <v-app style="min-height: 0; max-height: 90px; overflow-y: hidden">
     <v-app-bar class="secondHeader">
@@ -28,7 +28,7 @@
           </v-btn>
         </v-col>
         <v-col cols="auto">
-          <v-menu v-model="menu" :close-on-content-click="false" offset-y>
+          <v-menu max-width="500px" v-model="menu" :close-on-content-click="false" offset-y>
             <template  v-slot:activator="{ props }">
               <v-btn style="margin-right: 30px;" color="white" v-bind="props" icon>
                 <v-icon>mdi-menu</v-icon>
@@ -72,8 +72,8 @@ export default {
     menu: false,
     menuItems: [
       { text: "Home", path: "/home", icon: "mdi-home" },
-      { text: "Progetti", path: "/progetti", icon: "mdi-play" },
-      { text: "Campagne", path: "/campagne", icon: "mdi-play" },
+      { text: "Progetto", path: "/progetto", icon: "mdi-play" },
+      { text: "Campagne", path: "/campagna", icon: "mdi-play" },
       { text: "Preferiti", path: "/preferiti", icon: "mdi-heart" },
       { text: "Eventi", path: "/eventi", icon: "mdi-calendar" },
       { text: "Configurazioni", path: "/configurazione", icon: "mdi-cog" },

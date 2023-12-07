@@ -22,6 +22,22 @@ const router = createRouter({
   {
     path: '/configurazione',
     component:() => import('./components/Config/configurazione.vue')
+  },
+  {
+    path: '/campagna',
+    component:() => import('./components/Campagna/campagna.vue')
+  },
+  {
+    path: '/progetto',
+    component: () => import('./components/Progetto/progetto.vue')
+  },
+  {
+    path: '/preferiti',
+    component: () => import('./components/Preferiti/preferiti.vue')
+  },
+  {
+    path: '/eventi',
+    component: () => import('./components/Eventi/eventi.vue')
   }
   ],
 });
