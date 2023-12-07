@@ -20,6 +20,8 @@
         <v-img :src="progetto.img" height="300px" cover></v-img>
         <v-card-title class="cardTitle">{{ progetto.titolo }}</v-card-title>
         <v-card-subtitle class="cardTitle">{{ progetto.tema }}</v-card-subtitle>
+        <v-icon class="icon">mdi-pencil</v-icon>
+            <v-icon style="color: red;" class="icon">mdi-heart</v-icon>
       </v-card>
     </v-col>
   </v-row>
@@ -124,5 +126,12 @@ hr {
 
 .cardTitle:hover {
   white-space: normal;
+}
+
+.icon {
+  margin-top: 1em;
+  margin-left: 8px;
+  cursor: pointer;
+
 }
 </style>
