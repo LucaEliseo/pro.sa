@@ -35,6 +35,10 @@ const router = createRouter({
       path: "/eventi",
       component: () => import("./components/Eventi/eventi.vue"),
     },
+  {
+    path: "/devices",
+    component: () => import("./components/Devices/devices.vue")
+  }
   ],
 });
 
